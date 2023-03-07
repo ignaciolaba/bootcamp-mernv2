@@ -16,6 +16,16 @@ li {
     list-style: none;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 500px;
+    padding: 30px 0px;
+}
+
 .bootcamp-mern {
     display: flex;
     flex-direction: column;
@@ -47,4 +57,20 @@ li {
     justify-content: center;
     align-items: center;
     
+}
+
+.swapi_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 500px;
+    padding: 30px 0px;
+}
+
+form.swapi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

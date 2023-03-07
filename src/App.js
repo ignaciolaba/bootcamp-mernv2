@@ -1,62 +1,20 @@
+import { BrowserRouter } from 'react-router-dom';
 import { ApiAxiosPokemon } from './components/API_pokemon_axios/ApiAxiosPokemon';
 import PersonalCard from './components/apoyalo/PersonCard';
+import { Compilado } from './components/Compilado';
 import { ListaDeQuehaceres } from './components/lista_quehaceres/ListaDeQuehaceres';
 import { MasFormularios } from './components/mas_formularios/MasFormularios';
+import { AppRoutes } from './router/AppRoutes';
 import './static/css/App.css';
 
 
 function App() {
   return (
-    <div className="bootcamp-mern">
-        <h1>Bootcamp MERN</h1>
-      <div className="apoyalo">
-          <h2>Apoyalo</h2>
-          <PersonalCard
-          firstName={"Ignacio"}
-          lastName={"Labarca"}
-          age={28}
-          hairColor={"Negro"}
-          />
-          <PersonalCard
-          firstName={"Pedro"}
-          lastName={"Lira"}
-          age={39}
-          hairColor={"Azul"}
-          />
-          <PersonalCard
-          firstName={"Juan"}
-          lastName={"Lorca"}
-          age={18}
-          hairColor={"Gris"}
-          />
-          <PersonalCard
-          firstName={"Jaime"}
-          lastName={"Pirlo"}
-          age={48}
-          hairColor={"Amarillo"}
-          />
-          <PersonalCard
-          firstName={"Alexis"}
-          lastName={"Sanchez"}
-          age={35}
-          hairColor={"Negro"}
-          />
-      </div>
-      <div className="mas_formularios">
-          <h2>Más Formularios</h2>
-          <MasFormularios />
-      </div>
-      <div className="lista_quehaceres">
-          <h2>Lista de Quehaceres</h2>
-          <ListaDeQuehaceres />
-      </div>
-      <div className="api_axios_pokemon">
-        <h2>API Axios Pokemon</h2>
-        <ApiAxiosPokemon />
-      </div>
-
-    </div>
-      
+    <BrowserRouter>
+        <AppRoutes />
+    </BrowserRouter>
+    
+    
   );
 }
 
