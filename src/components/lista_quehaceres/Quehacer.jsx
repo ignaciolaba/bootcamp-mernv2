@@ -11,7 +11,6 @@ export const Quehacer = (props) => {
         const nuevaLista = () => lista.filter((quehacer) => lista.indexOf(quehacer) !== index )
     
 
-        console.log(nuevaLista)
         setLista(nuevaLista)
     }
 

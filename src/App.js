@@ -1,3 +1,4 @@
+import { ApiAxiosPokemon } from './components/API_pokemon_axios/ApiAxiosPokemon';
 import PersonalCard from './components/apoyalo/PersonCard';
 import { ListaDeQuehaceres } from './components/lista_quehaceres/ListaDeQuehaceres';
 import { MasFormularios } from './components/mas_formularios/MasFormularios';
@@ -48,6 +49,10 @@ function App() {
       <div className="lista_quehaceres">
           <h2>Lista de Quehaceres</h2>
           <ListaDeQuehaceres />
+      </div>
+      <div className="api_axios_pokemon">
+        <h2>API Axios Pokemon</h2>
+        <ApiAxiosPokemon />
       </div>
 
     </div>
